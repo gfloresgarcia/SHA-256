@@ -88,6 +88,7 @@ int main(void)
     SHA256_MbedTLS((const unsigned char *)mensaje, strlen(mensaje), hash);
 
     //Call function to print Hash value
+    PRINTF("Input: %s \n\r", mensaje);
     PRINTF("SHA-256: ");
     PRINT_Hash(hash);
 
